@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>CC Portal</title>
+    <title>User Portal</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="{% static  'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
@@ -152,7 +152,7 @@
                             <!-- /input-group -->
                         </li>
                         <li>
-                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a href="{% url 'dashboard' %}"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
 
                         <li>
@@ -197,7 +197,7 @@
                         </div>
                         <a href="{% url 'reg' %}">
                             <div class="panel-footer">
-                                <span class="pull-left">View Bets Details</span>
+                                <span class="pull-left">View Registration Details</span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                 <div class="clearfix"></div>
                             </div>
