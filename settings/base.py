@@ -16,11 +16,33 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # for static files to be added
-PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
+# PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 
-STATICFILES_DIRS = (
-    os.path.join(PROJECT_ROOT, 'static'),
+# STATICFILES_DIRS = (
+#     os.path.join(PROJECT_ROOT, 'static'),
+# )
+
+
+
+TEMPLATE_DIRS = (
+    os.path.join(BASE_DIR, 'templates'),
 )
+# STATICFILES_DIRS = (
+#      os.path.join(BASE_DIR, 'static'),
+# )
+# STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static')
+#
+# STATIC_URL = '/static/'
+
+
+STATIC_URL = '/static/'
+# STATIC_ROOT=os.path.join(BASE_DIR, 'static/')
+STATICFILES_DIRS = [
+	os.path.join(BASE_DIR, "static"),
+	BASE_DIR,
+]
+
+
 
 # Application definition
 
