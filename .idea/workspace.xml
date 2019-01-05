@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77a48772-a16e-4aeb-8090-510341104878" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/petero/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/petero/templates/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petero/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/petero/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petero/templates/family.html" beforeDir="false" afterPath="$PROJECT_DIR$/petero/templates/family.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petero/templates/job.html" beforeDir="false" afterPath="$PROJECT_DIR$/petero/templates/job.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petero/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/petero/templates/registration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petero/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/petero/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petero/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/petero/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings/base.py" afterDir="false" />
     </list>
     <ignored path="Tapi.iws" />
@@ -30,8 +36,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/petero/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+            <state relative-caret-position="165">
+              <caret line="16" column="23" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="23" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -39,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/petero/views.py">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="1695">
+              <caret line="113" selection-start-line="113" selection-end-line="113" />
             </state>
           </provider>
         </entry>
@@ -51,8 +57,26 @@
       <file leaf-file-name="registration.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/petero/templates/registration.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2415">
-              <caret line="161" selection-start-line="161" selection-end-line="161" />
+            <state relative-caret-position="3045">
+              <caret line="203" column="39" selection-start-line="203" selection-start-column="39" selection-end-line="203" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/petero/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -66,32 +90,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manage.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manage.py">
+      <file leaf-file-name="job.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/petero/templates/job.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-              <folding>
-                <element signature="e#22#31#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="4635">
+              <caret line="309" column="67" selection-start-line="309" selection-start-column="67" selection-end-line="309" selection-end-column="67" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/petero/models.py">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/petero/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/petero/admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="16" selection-start-line="16" selection-end-line="17" />
+            <state relative-caret-position="1320">
+              <caret line="97" column="56" selection-start-line="97" selection-start-column="56" selection-end-line="97" selection-end-column="56" />
               <folding>
                 <element signature="e#24#63#0" expanded="true" />
               </folding>
@@ -99,34 +111,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tapi/urls.py">
+      <file leaf-file-name="family.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/petero/templates/family.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="65" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
-              <folding>
-                <element signature="e#638#679#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="287">
+              <caret line="488" selection-start-line="488" selection-end-line="489" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dev.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/settings/dev.py">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/petero/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/settings/base.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="825">
+              <caret line="55" selection-start-line="55" selection-end-line="55" />
             </state>
           </provider>
         </entry>
@@ -141,6 +139,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>exampleModalCenter</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -148,14 +151,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/petero/templates/index.py" />
-        <option value="$PROJECT_DIR$/petero/templates/job.html" />
         <option value="$PROJECT_DIR$/petero/templates/index.html" />
-        <option value="$PROJECT_DIR$/petero/models.py" />
-        <option value="$PROJECT_DIR$/petero/urls.py" />
-        <option value="$PROJECT_DIR$/petero/templates/family.html" />
-        <option value="$PROJECT_DIR$/petero/views.py" />
         <option value="$PROJECT_DIR$/Tapi/settings.py" />
-        <option value="$PROJECT_DIR$/petero/templates/registration.html" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/Tapi/settings/dev.py" />
         <option value="$PROJECT_DIR$/Tapi/settings/production.py" />
@@ -165,6 +162,13 @@
         <option value="$PROJECT_DIR$/petero/admin.py" />
         <option value="$PROJECT_DIR$/petero/templates/dashboard.html" />
         <option value="$PROJECT_DIR$/settings/base.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/petero/templates/registration.html" />
+        <option value="$PROJECT_DIR$/petero/models.py" />
+        <option value="$PROJECT_DIR$/petero/templates/job.html" />
+        <option value="$PROJECT_DIR$/petero/views.py" />
+        <option value="$PROJECT_DIR$/petero/urls.py" />
+        <option value="$PROJECT_DIR$/petero/templates/family.html" />
       </list>
     </option>
   </component>
@@ -179,9 +183,9 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="67" />
-    <option name="y" value="27" />
-    <option name="width" value="1382" />
-    <option name="height" value="784" />
+    <option name="y" value="25" />
+    <option name="width" value="1533" />
+    <option name="height" value="875" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -189,7 +193,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -200,17 +203,29 @@
             <path>
               <item name="Tapi" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tapi" type="462c0819:PsiDirectoryNode" />
+              <item name="petero" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tapi" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tapi" type="462c0819:PsiDirectoryNode" />
+              <item name="petero" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tapi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tapi" type="462c0819:PsiDirectoryNode" />
+              <item name="settings" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="ter&#9;ACTION&#9;ActivateTerminalToolWindow" />
+    <property name="SearchEverywhereHistoryKey" value="terminal&#9;ACTION&#9;ActivateTerminalToolWindow&#10;ter&#9;ACTION&#9;ActivateTerminalToolWindow" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="last_opened_file_path" value="/media/manje/9c30e2c2-6b9e-4a64-8702-cbcbc28b81bd/Documents/apps/Safaribet Apps/Folder-version/Safaribet Apps/Version 2/safaribetAPI" />
@@ -487,17 +502,17 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.33071896" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23548597" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32156864" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24266145" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -522,27 +537,17 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Tapi/urls.py">
+    <entry file="file://$PROJECT_DIR$/petero/templates/job.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-          <folding>
-            <element signature="e#638#679#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="3060">
+          <caret line="204" column="56" selection-start-line="204" selection-start-column="56" selection-end-line="204" selection-end-column="56" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/petero/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/petero/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="1695">
+          <caret line="113" selection-start-line="113" selection-end-line="113" />
         </state>
       </provider>
     </entry>
@@ -595,9 +600,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding>
-            <element signature="e#24#63#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -605,9 +607,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-          <folding>
-            <element signature="e#638#679#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -661,9 +660,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding>
-            <element signature="e#24#63#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -672,9 +668,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-          <folding>
-            <element signature="e#638#679#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -741,9 +734,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding>
-            <element signature="e#24#63#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -764,17 +754,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/petero/templates/job.html">
+    <entry file="file://$PROJECT_DIR$/Tapi/settings/base.py" />
+    <entry file="file://$PROJECT_DIR$/Tapi/settings/dev.py" />
+    <entry file="file://$PROJECT_DIR$/Tapi/settings/production.py" />
+    <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+        <state relative-caret-position="315">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/petero/templates/family.html">
+    <entry file="file://$PROJECT_DIR$/Tapi/settings.py" />
+    <entry file="file://$PROJECT_DIR$/petero/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4230">
-          <caret line="282" column="40" selection-start-line="282" selection-start-column="40" selection-end-line="282" selection-end-column="40" />
+        <state relative-caret-position="75">
+          <caret line="16" selection-start-line="16" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tapi/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="65" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings/production.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2550">
+          <caret line="170" column="36" selection-start-line="170" selection-start-column="36" selection-end-line="170" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1695">
+          <caret line="113" selection-start-line="113" selection-end-line="113" />
         </state>
       </provider>
     </entry>
@@ -785,78 +807,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tapi/settings/base.py" />
-    <entry file="file://$PROJECT_DIR$/Tapi/settings/dev.py" />
-    <entry file="file://$PROJECT_DIR$/Tapi/settings/production.py" />
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#22#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/petero/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tapi/settings.py" />
-    <entry file="file://$PROJECT_DIR$/petero/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/petero/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="16" selection-start-line="16" selection-end-line="17" />
-          <folding>
-            <element signature="e#24#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/petero/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/petero/templates/registration.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2415">
-          <caret line="161" selection-start-line="161" selection-end-line="161" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tapi/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="65" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
-          <folding>
-            <element signature="e#638#679#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/petero/templates/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -864,19 +814,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/settings/dev.py">
+    <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/petero/templates/registration.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3045">
+          <caret line="203" column="39" selection-start-line="203" selection-start-column="39" selection-end-line="203" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/petero/templates/job.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4635">
+          <caret line="309" column="67" selection-start-line="309" selection-start-column="67" selection-end-line="309" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/petero/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/petero/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="23" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/settings/base.py">
+    <entry file="file://$PROJECT_DIR$/petero/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="1320">
+          <caret line="97" column="56" selection-start-line="97" selection-start-column="56" selection-end-line="97" selection-end-column="56" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/petero/templates/family.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="488" selection-start-line="488" selection-end-line="489" />
         </state>
       </provider>
     </entry>
