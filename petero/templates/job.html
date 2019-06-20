@@ -188,6 +188,18 @@
                     <!-- /.col-lg-12 -->
                 </div>
                 <!-- /.row -->
+                <!-- start response from server -->
+
+                      {% if messages %}
+                          <div class="alert alert-info alert-dismissable" id="response">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                          {% for message in messages %}
+                                <ul{% if message.tags %} class="{{ message.tags }}"{% endif %}><strong>{{ message }} </strong></ul>
+                          {% endfor %}
+                          </div>
+                      {% endif %}
+
+               <!-- end response from server -->
 
                 <!-- /.start of Form Row  -->
 
@@ -206,35 +218,39 @@
 
                                         <div class="col-lg-6">
                                             <div class="form-group">
-                                                <label>ID No</label>
-                                                <input class="form-control" id="id-no" name="id-no">
+                                                <label>National ID</label>
+                                                <select id="idno" name="idno" class="form-control" required="required">
+                                                      {% for r in reg %}
+                                                      <option value={{ r.idno }}>{{ r.idno }}</option>
+                                                      {% endfor %}
+                                                 </select>
 
                                             </div>
                                             <div class="form-group">
                                                 <label>Department</label>
-                                                <input class="form-control" id="department" name="department">
+                                                <input class="form-control" id="department" name="department" required="required" pattern="[A-Za-z0-9]{1,20}">
 
                                             </div>
                                             <div class="form-group">
                                                 <label>Position</label>
-                                                <input class="form-control" id="position" name="position">
+                                                <input class="form-control" id="position" name="position" required="required" pattern="[A-Za-z0-9]{1,20}">
 
                                             </div>
                                             <div class="form-group">
                                                 <label>Gross Salary</label>
-                                                <input class="form-control" id="salary" name="salary">
+                                                <input class="form-control" id="salary" name="salary" required="required" pattern="[0-9]{1,20}">
                                             </div>
 
                                         </div >
                                         <div class="col-lg-6">
                                             <div class="form-group">
-                                                <label>Contract</label>
-                                                <input class="form-control" id="contract" name="contract">
+                                                <label>Contract Duration</label>
+                                                <input class="form-control" id="contract" name="contract" required="required" pattern="[A-Za-z0-9]{1,20}">
                                             </div>
                                             <div class="form-group">
                                                 <label>Start Date</label>
                                                 <div class='input-group date' id='datetopicker'>
-                                                    <input type='text' class="form-control" id="start-date" name="start-date" />
+                                                    <input type='text' class="form-control" id="start_date" name="start_date" required="required"/>
                                                     <span class="input-group-addon">
                                                         <span class="glyphicon glyphicon-calendar"></span>
                                                     </span>
@@ -243,7 +259,7 @@
                                             <div class="form-group">
                                                 <label>End Date</label>
                                                 <div class='input-group date' id='datetopicker'>
-                                                    <input type='text' class="form-control" id="end-date" name="end-date" />
+                                                    <input type='text' class="form-control" id="end_date" name="end_date" required="required"/>
                                                     <span class="input-group-addon">
                                                         <span class="glyphicon glyphicon-calendar"></span>
                                                     </span>
@@ -272,6 +288,74 @@
 
                <!-- /. End of Form Row  -->
 
+            <!-- Edit Modal -->
+                    <div class="modal fade" id="editModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h3 class="modal-title" id="exampleModalLongTitle">Edit Job</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <form role="form" method="post" action="{% url 'editJob' %}">
+                              {% csrf_token %}
+                          <div class="modal-body">
+
+
+                                <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label>National ID</label>
+                                                <input class="form-control" id="edit_idno" name="edit_idno" readonly>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label>Department</label>
+                                                <input class="form-control" id="edit_department" name="edit_department" required="required" pattern="[A-Za-z0-9]{1,20}">
+
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label>Position</label>
+                                                <input class="form-control" id="edit_position" name="edit_position" required="required" pattern="[A-Za-z0-9]{1,20}">
+
+                                            </div>
+
+                                </div >
+                                <div class="col-lg-6">
+                                        <div class="form-group">
+                                                <label>Salary</label>
+                                                <input class="form-control" id="edit_salary" name="edit_salary" required="required" pattern="[0-9]{1,20}">
+                                        </div>
+                                        <div class="form-group">
+                                                <label>Contract Duration</label>
+                                                <input class="form-control" id="edit_contract" name="edit_contract" required="required" pattern="[A-Za-z0-9]{1,20}">
+                                        </div>
+                                        <div class="form-group">
+                                                <label>End Date</label>
+                                                <div class='input-group date' id='datetopicker'>
+                                                    <input type='text' class="form-control" id="edit_end_date" name="edit_end_date" required="required"/>
+                                                    <span class="input-group-addon">
+                                                        <span class="glyphicon glyphicon-calendar"></span>
+                                                    </span>
+                                                </div>
+                                        </div>
+
+                                </div >
+
+                          </div>
+                          <div class="modal-footer">
+                              <button class ="btn btn-primary btn-bloc" type="submit" >Save Changes</button>
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                          </div>
+                         </form>
+                        </div>
+                      </div>
+                    </div>
+                <!-- End of Edit Modal -->
+
+
 
                 <!-- /. Start of Table Row  -->
 
@@ -280,21 +364,24 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Registrations
+                            Jobs
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
-                            <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
+                        <form method="post" action="{% url 'v_Job' %}">
+                              {% csrf_token %}
+                              <button class="btn btn-primary btn-bloc" type="submit" >Show Employees Jobs</button>
+                          </form>
+                            <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example" name="job-table">
                                 <thead>
                                     <tr>
-                                        <th>ID Number</th>
+                                        <th>National ID</th>
                                         <th>Department</th>
                                         <th>Position</th>
                                         <th>Salary</th>
-                                        <th>Contract</th>
+                                        <th>Contract Duration</th>
                                         <th>Start-Date</th>
                                         <th>End-Date</th>
-                                        <th></th>
                                         <th></th>
                                     </tr>
                                 </thead>
@@ -308,8 +395,7 @@
                                         <td>{{ job.contract }}</td>
                                         <td>{{ job.start_date }}</td>
                                         <td>{{ job.end_date }}</td>
-                                        <td class="center"><button type="submit" class="btn btn-success">Edit</button></td>
-                                        <td class="center"><button type="submit" class="btn btn-danger">Delete</button></td>
+                                        <td class="center"><button type="submit" class="btn btn-success" data-toggle="modal" data-target="#editModalCenter" onclick="jobTable()" >Edit</button></td>
                                     </tr>
                                 {% endfor %}
                                 </tbody>
@@ -352,6 +438,8 @@
     <script src="{% static 'vendor/datatables/js/jquery.dataTables.min.js' %}"></script>
     <script src="{% static 'vendor/datatables-plugins/dataTables.bootstrap.min.js' %}"></script>
     <script src="{% static 'vendor/datatables-responsive/dataTables.responsive.js' %}"></script>
+    <!-- Edit and print JavaScript -->
+    <script src="{% static 'js/tapi.js' %}"></script>
 
     <script>
     $(document).ready(function() {
